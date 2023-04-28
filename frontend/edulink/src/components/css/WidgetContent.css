@@ -1,0 +1,35 @@
+.widget_contents {
+    display: flex;
+    cursor: pointer;
+}
+
+.widget_content {
+    margin: 5px;
+    display: flex;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+
+.widget_content img {
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.widget_contentTitle {
+    margin-left: 10px;
+}
+
+.widget_contentTitle h5 {
+    color: whitesmoke;
+}
+
+.widget_contentTitle p {
+    color: lightgray;
+    font-size: small;
+}
+.widget_contentTitle a{
+    text-decoration: none;
+    color: lightgray;
+}
+

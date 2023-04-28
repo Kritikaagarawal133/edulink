@@ -1,0 +1,33 @@
+.edulink {
+    width: 100%;
+    min-width: fit-content;
+}
+
+.edulink_contents{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: black;
+    min-width: fit-content;
+    width: 100%;
+    color: black;
+}
+
+.edulink_content {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    color: black;
+}
+.react-responsive-modal-modal {
+    width: 90vw;
+    height: 90vh;
+  }
+
+.quill{
+    height: 50vh;
+}  
+
+.react-responsive-modal-overlay {
+    background: rgb(0 0 0 / 75%);
+} 

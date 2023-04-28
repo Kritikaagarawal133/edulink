@@ -1,0 +1,30 @@
+.edulinkBox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid grey;
+    background-color: rgb(29, 27, 27);
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 700px;
+}
+
+.edulink:hover{
+    border: 1px solid whitesmoke;
+}
+
+.edulinkBox_info{
+    display: flex;
+    align-items: center;
+}
+
+.edulinkBox_edulink p{
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.edulinkBox_edulink{
+    display: flex;
+    margin-top: 10px;
+}
+

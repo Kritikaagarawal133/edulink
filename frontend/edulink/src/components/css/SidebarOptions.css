@@ -1,0 +1,43 @@
+.sidebarOptions{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.sidebarOption img{
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+.sidebarOption img:hover{
+    height: 40px;
+    width: 50px;
+    transition: 0.2s;
+}
+
+.sidebarOption p{
+    margin-left: 80px;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.sidebarOption a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.sidebarOption a:hover{
+   color: rgb(141, 139, 139);
+}
