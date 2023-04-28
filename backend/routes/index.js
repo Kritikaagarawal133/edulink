@@ -1,7 +1,6 @@
 
 const express = require('express');
 const router = express.Router();
-
 const questionRouter = require('./Question');
 const answerRouter = require('./Answer');
 
@@ -18,6 +17,7 @@ router.get('/', (req, res) => {
 // app.use("/api/auth", authRoutes);
 router.use('/questions', questionRouter);
 router.use('/answers', answerRouter);
+// router.use('/auth', authRoutes);
 
 // const port = process.env.PORT||80;
 // app.listen(port,() => console.log('Listening on port ${port}...'));

@@ -1,11 +1,14 @@
+require("dotenv").config();
 const express=require('express')
 const app=express()
 const bodyParser=require('body-parser')
 const cors=require('cors')
 const path  =require('path')
-const PORT=80;
+const PORT=process.env.PORT;
 const db=require('./db')
 const router = require("./routes")
+const userRouter = require("./routes/users")
+const {validateAuthorization} = require("./utils/auth-validation")
 
 //database connection
 db.connect();
@@ -23,7 +26,9 @@ app.use((req, res, next)=>{
 
 //routes
 
-app.use("/api", router);
+app.use("/api", validateAuthorization(), router);
+app.use('/auth', userRouter);
+
 
 
 app.use('/uploads',express.static(path.join(__dirname,"/.../uploads")));
